@@ -5,26 +5,25 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+//import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+//import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+//import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +43,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Hardick Portfolio',
+  description: "Welcome to my portfolio",
 };
 
 /**
@@ -69,27 +68,22 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Hardick Chatterjee.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm an international MS graduate student with experience in <strong className="text-stone-100">Full Stack Software Development</strong>, currently studying
+        at <strong className="text-stone-100">Arizona State University.</strong>
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+    
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://pdfhost.io/v/p9yRZI57X_Hardick_Resume_Handhske',
       text: 'Resume',
       primary: true,
-      Icon: ArrowDownTrayIcon,
+      Icon: ArrowDownTrayIcon,  
     },
     {
       href: `#${SectionId.Contact}`,
@@ -104,16 +98,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi, I'm a software developer specializing in the FinTech industry. With 4 years of experience in developing banking solutions, I'm proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have intermediate knowledge of AWS. I also enjoy coding in Java. Currently pursuing my Masters in Information Technology, I'm dedicated to staying up-to-date with the latest technologies. I'm known for my strong work ethic, attention to detail, and passion for delivering user-centric solutions. Let's collaborate and drive positive change through technology.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Tempe, AZ', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Study', text: 'Arizona State University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Temenos', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,63 +120,73 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Hindi',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Bengali',
+        level: 10,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Languages',
     skills: [
       {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'C++',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'Java',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Javascript',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Node.js',
+        level: 6,
       },
+      
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Frameworks',
     skills: [
       {
-        name: 'React Native',
+        name: 'React',
+        level: 8,
+      },
+      {
+        name: 'Next.js',
+        level: 6,
+      },
+      {
+        name: 'MongoDB',
+        level: 8,
+      },
+      
+    ],
+  },
+  {
+    name: 'Tools and Version Control',
+    skills: [
+      {
+        name: 'Visual Studio Code',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Eclipse',
+        level: 9,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Git',
+        level: 8,
+      },
+      {
+        name: 'Jenkins',
+        level: 6,
       },
     ],
   },
@@ -196,70 +197,34 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Web Streaming Application',
+    description: 'This is a clone of the online streaming platform Hulu using ReactJS, Tailwind CSS and production with NextJS with server side rendering. Movies were taken from the api endpoint The Movie Database (TMDB).',
+    url: 'https://hulu-3sfh-git-main-hardickchatterjee.vercel.app',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Electronic based queuing system using fingerprint sensor',
+    description: 'Developed an electronic based queuing system which takes the input of an user’s fingerprint and then generates him a queue number. This project is basically used to reduce the physical work in queue management systems. ',
+    url: '',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'University Website',
+    description: 'Developed University Website and a student login portal which is an user friendly website that allows student to get information about their engineering or business schools, apply for their UG or PG branch, choose their own exam slots, venue and timing, make payment for registration using a secured payment gateway by Razorpay. The website also contains general information about the university, gallery of photos and videos of cultural events, and also a parent login for each respective students.',
+    url: '',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Fedwire Payments',
+    description: 'As part of the Payments team in Temenos, developed the framework for Fedwire Funds Service which is a real time gross settlement system owned and operated by the Federal Reserve Banks along with Business Analysts and Senior Software Engineers.',
+    url: '',
     image: porfolioImage8,
-  },
+  },  
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Game Application',
+    description: 'Developed a Game Application using Unity Engine 5. This included designing the basic game i.e. movement of user, input keys, designing the background world , action of the world, designing the main character and enemies, designing the power-ups etc. ',
+    url: '',
     image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,39 +233,25 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: '2022-2024',
+    location: 'Arizona State University',
+    title: 'MS Information Technology',
+    content: <p>CGPA: 3.95/4</p> },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: '2014-2018',
+    location: 'Vellore Institute of Technology',
+    title: 'B.Tech Computer Science',
+    content: <p>CGPA: 8.18/10</p>  },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2018 - June 2022',
+    location: 'Temenos',
+    title: 'Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I played a crucial role in the development of banking software for numerous international banks, utilizing my technical expertise in SQL, Java, JavaScript, and ReactJS. I diligently crafted clean and efficient code in accordance with given specifications, proficiently addressed software issues, and diligently upgraded existing systems while also resolving bugs in various payment channels. Additionally, I took charge of spearheading the development of enhancements for Fedwire payments, SWIFT, and ACH payments, which yielded an outstanding 21% increase in performance. Through my design and implementation efforts, I successfully managed multiple projects and significantly contributed to the expansion of the company's client base, ultimately generating a noteworthy 2.9% increase in revenue.
       </p>
     ),
   },
@@ -313,19 +264,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Shwetha Nayak',
+      text: 'Hardick is a person I can rely on for the kind of passion and honesty he puts in his work. I had closely worked with him since he joined. He is a proactive, enthusiastic and a fast learner. He always tries to optimize his time and learn from his mistakes. In short span of time he became an important contributor to the unit. I would recommend him to anybody and certain that he will add value to any organisation he works for.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Gaurav Nagpal',
+      text: 'Hardick is an absolute delight to work with. He has strong analytical skills and a great appetite for learning new skills and taking on challenges. He grew very rapidly at Temenos from being a software developer to driving and managing projects, from start to end. His commitment to work is outstanding. Thanks to his eye for details, he would surely be a designers most wanted developer. He is definitely a great addition to any dev team. I wish him all the best in his future endeavors.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
@@ -336,27 +282,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Please do not hesitate to reach out to me.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'hchatte1@asu.edu',
+      href: 'mailto:hchatte1@asu.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Tempe, Arizona',
+      href: 'https://www.google.ca/maps/place/Tempe,+AZ/@33.3920385,-112.0105021,12z/data=!3m1!4b1!4m6!3m5!1s0x872b0898a6aa80e3:0xa2dd4aad392cb41f!8m2!3d33.4255104!4d-111.9400054!16zL20vMHFwc24?entry=ttu',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'hardickchatterjee',
+      href: 'https://github.com/hardickchatterjee',
     },
   ],
 };
@@ -365,9 +306,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/hardickchatterjee'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/hardick-chatterjee/'},
 ];
